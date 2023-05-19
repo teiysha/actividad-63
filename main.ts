@@ -1,4 +1,12 @@
-let lista: number[] = []
+let b = 0
 basic.forever(function () {
-    lista = [0, 1]
+    b = 255 - input.lightLevel()
+    led.setBrightness(b)
+    basic.showLeds(`
+        . . # . .
+        . . . . .
+        . . . . .
+        . . . . .
+        . . . . .
+        `)
 })
